@@ -1,10 +1,20 @@
-find some good ref sites
-  https://2tona.ge/  
++ find some good ref sites
+    https://2tona.ge/  
+    https://rtveli-restaurant.ge/
+    https://craftwinerestaurant.com/
+    https://georgia.travel/ka/საახალწლო-სუფრა
+
+
 index page
-    menu button
+    + menu button
+        -maybe menu on index?
     language change
     logo n shii
     maps embed
+    maps link
     location
-    
+    open from 9:00 to 21:00
+    fb, insta pages links
+    contact number etc.
+
 menu page

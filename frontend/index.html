@@ -1,14 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Georgia</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <h1>Georgia</h1>
-    
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body>
+    <nav class="flex justify-around items-center hover:bg-white hover:text-black" style="height: 10vh">
+      <div>French/English/Georgian</div>
+      <h1>Georgia</h1>
+    </nav>
+    <main style="height: 80vh" class="flex justify-center items-center">
+      <button class="text-3xl bg-slate-600 px-6 py-4">Menu</button>
+      <img
+        class="absolute -z-10 w-screen h-screen"
+        src="public/new-year-supra.png"
+      />
+    </main>
+    <footer style="height: 10vh; background-color: rgba(255, 255, 255, 0.3);" class="flex justify-around items-center">
+      <button>Facebook</button>
+      <button>Instagram</button>
+      <div>Contact number: +995 555 55 55</div>
+      <div>Location: Chinon, France</div>
+      <div>Map embed</div>
+    </footer>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
