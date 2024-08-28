@@ -4,17 +4,26 @@
     https://craftwinerestaurant.com/
     https://georgia.travel/ka/საახალწლო-სუფრა
 
+unsplash.com for free food photos
 
 index page
     + menu button
         -maybe menu on index?
     language change
+        just use selectors with no icon
     logo n shii
-    maps embed
+        what logo?
     maps link
-    location
+        + add icon
+        add link
+    + location
     open from 9:00 to 21:00
-    fb, insta pages links
-    contact number etc.
+    fb pages links
+        + add icon
+        add link
+    + contact number etc.
+    maps embed
+        idk bout that
 
 menu page
+    

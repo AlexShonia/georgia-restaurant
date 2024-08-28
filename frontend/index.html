@@ -4,27 +4,109 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Georgia</title>
-    <link rel="stylesheet" href="output.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
   </head>
-  <body>
-    <nav class="flex justify-around items-center hover:bg-white hover:text-black" style="height: 10vh">
-      <div>French/English/Georgian</div>
-      <h1>Georgia</h1>
+  <body style="background-color: rgb(88, 88, 86)">
+    <nav
+      class="navbar border-bottom border-body shadow-lg"
+      style="
+        background-color: rgb(54, 54, 52);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+      "
+      data-bs-theme="dark"
+    >
+      <!-- <select
+        class="form-select pl-6"
+        style="width: 8vh; margin-left: 1vw"
+        aria-label="language select"
+      >
+        <option selected value="FR">FR</option>
+        <option value="EN">EN</option>
+      </select> -->
+      <a class="navbar-brand fs-2 font-monospace" href="#">Georgia</a>
     </nav>
-    <main style="height: 80vh" class="flex justify-center items-center">
-      <button class="text-3xl bg-slate-600 px-6 py-4">Menu</button>
-      <img
-        class="absolute -z-10 w-screen h-screen"
-        src="public/new-year-supra.png"
-      />
+
+    <main
+      class="d-flex justify-content-center align-items-center"
+      style="height: 78vh"
+    >
+      <a
+        href="./menu.html"
+        style="
+          width: 18vw;
+          height: 18vw;
+          text-decoration: none;
+          color: white;
+          background-image: url(./public/new-year-supra.png);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+        "
+        class="d-flex justify-content-center align-items-center fs-1 rounded-4"
+      >
+        Menu
+      </a>
     </main>
-    <footer style="height: 10vh; background-color: rgba(255, 255, 255, 0.3);" class="flex justify-around items-center">
-      <button>Facebook</button>
-      <button>Instagram</button>
-      <div>Contact number: +995 555 55 55</div>
-      <div>Location: Chinon, France</div>
-      <div>Map embed</div>
-    </footer>
-    <script src="script.js"></script>
+    <div style="width: 90vw; margin: auto">
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top text-white"
+      >
+        <div class="col-md-4 d-flex align-items-center">
+          <span class="mb-3 mb-md-0">© 2024 Georgia | Contact: +33 6 00 00 00</span>
+        </div>
+
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li>6 Quai Charles VII, 37500 Chinon, France</li>
+          <li class="ms-3">
+            <a class="text-body-secondary" href="https://maps.app.goo.gl/cfTpHMK5CyuYN3D66"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                color="white"
+                fill="currentColor"
+                class="bi bi-geo-alt"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"
+                />
+                <path
+                  d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"
+                /></svg
+            ></a>
+          </li>
+          <li class="ms-3">
+            <a class="text-body-secondary" href="https://www.facebook.com/profile.php?id=61563329435023"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                color="white"
+                height="24"
+                fill="currentColor"
+                class="bi bi-facebook"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"
+                /></svg
+            ></a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
