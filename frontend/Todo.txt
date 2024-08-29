@@ -15,15 +15,21 @@ index page
         what logo?
     maps link
         + add icon
-        add link
+        + add link
     + location
     open from 9:00 to 21:00
     fb pages links
         + add icon
-        add link
+        + add link
     + contact number etc.
+        + add correct contact number
+    + fix menu mobile breakpoint
     maps embed
         idk bout that
+    fix footer mobile breakpoint
 
 menu page
+    + copy footer from index
+    + update menu items
+    add correct photos
     

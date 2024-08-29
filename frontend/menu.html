@@ -12,19 +12,22 @@
       crossorigin="anonymous"
     />
   </head>
-  <body style="background-color: rgb(88, 88, 86)">
-    <div class="d-flex flex-column justify-content-between" style="height: 100vh;">
+  <body style="background-color: rgb(88, 88, 86)" class="text-white">
+    <div
+      class="d-flex flex-column justify-content-between"
+      style="height: 100vh"
+    >
       <div
         class="w-50 ms-5 mt-3 d-flex justify-content-between align-items-center"
       >
         <a href="./index.html"
-          ><button class="btn text-white text-center" type="button">
+          ><button class="btn text-center" type="button">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="36"
               height="36"
               fill="currentColor"
-              class="bi bi-arrow-left-short"
+              class="bi bi-arrow-left-short text-white"
               viewBox="0 0 16 16"
             >
               <path
@@ -33,24 +36,35 @@
               />
             </svg></button
         ></a>
-        <h1 class="text-white">Menu</h1>
+        <h1>Menu</h1>
       </div>
       <main class="w-75 m-auto mt-5">
-        <div class="row row-cols-1 row-cols-md-4 g-4" id="products">
-        </div>
+        <h1 class="w-50 m-5 text-end">Entrée</h1>
+        <div class="row row-cols-1 row-cols-md-4 g-4" id="entree"></div>
+        <h1 class="w-50 m-5 text-end pe-4">Plats</h1>
+        <div class="row row-cols-1 row-cols-md-4 g-4" id="plats"></div>
+        <h1 class="w-50 m-5 text-end">Deserts</h1>
+        <div class="row row-cols-1 row-cols-md-4 g-4" id="deserts"></div>
+        <h1 class="w-50 m-5 text-end">Boissons</h1>
+        <div class="row row-cols-1 row-cols-md-4 g-4" id="boissons"></div>
       </main>
-      <div style="width: 90vw; margin: auto; margin-bottom: 0;">
+      <div style="width: 90vw; margin: auto; margin-bottom: 0">
         <footer
-          class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top text-white"
+          class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
         >
           <div class="col-md-4 d-flex align-items-center">
-            <span class="mb-3 mb-md-0">© 2024 Georgia</span>
+            <span class="mb-3 mb-md-0"
+              >© 2024 Georgia | Contact: 0605938249,
+              restaurantgeorgienchinon@gmail.com</span
+            >
           </div>
-  
+
           <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-            <li>6 Quai Charles VII, 37500 Chinon, France</li>
+            <li>6 Quai Charles VII Chinon, France</li>
             <li class="ms-3">
-              <a class="text-body-secondary"
+              <a
+                class="text-body-secondary"
+                href="https://maps.app.goo.gl/cfTpHMK5CyuYN3D66"
                 ><svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -69,7 +83,9 @@
               ></a>
             </li>
             <li class="ms-3">
-              <a class="text-body-secondary" href="#"
+              <a
+                class="text-body-secondary"
+                href="https://www.facebook.com/profile.php?id=61563329435023"
                 ><svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"

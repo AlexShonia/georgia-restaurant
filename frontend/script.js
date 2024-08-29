@@ -1,55 +1,61 @@
-const products_html = document.getElementById("products");
+const entree_html = document.getElementById("entree");
+const plats_html = document.getElementById("plats");
+const deserts_html = document.getElementById("deserts");
+const boissons_html = document.getElementById("boissons");
 
-products_json = [
-	{
-		name: "Salade César",
-		price: "14.00",
-		image: "./public/new-year-supra.png",
-	},
+entree_json = [
 	{
 		name: "Salade du Chef",
-		price: "12.50",
-		image: "./public/new-year-supra.png",
-	},
-	{
-		name: "Planche mixte végétarienne",
-		price: "12.00",
-		image: "./public/new-year-supra.png",
-	},
-	{
-		name: "Tbilissi",
 		price: "11.00",
-		image: "./public/new-year-supra.png",
+		image: "./public/salade_du_chef.jpg",
 	},
 	{
-		name: "Gebjalia",
-		price: "8.00",
-		image: "./public/new-year-supra.png",
+		name: 'Salade "Tbilissi"',
+		price: "10.00",
+		image: "./public/salade_tbilissi.jpg",
 	},
 	{
-		name: "Petite planche",
-		price: "5.00",
-		image: "./public/new-year-supra.png",
+		name: "Pkhali",
+		price: "10.00",
+		image: "./public/pkhali.jpg",
 	},
 	{
-		name: "Portion de frite",
-		price: "3.50",
-		image: "./public/new-year-supra.png",
+		name: "Fillet de poulet",
+		price: "10.00",
+		image: "./public/fillet_de_poulet.jpg",
 	},
+];
+
+plats_json = [
 	{
-		name: "Notre planche signature",
-		price: "35.00",
-		image: "./public/new-year-supra.png",
-	},
-	{
-		name: "Khinkali",
-		price: "12.00",
+		name: "Tolma",
+		price: "13.00",
 		image: "./public/new-year-supra.png",
 	},
 	{
 		name: "Khatchapuri",
-		price: "13.00",
+		price: "15.00",
 		image: "./public/new-year-supra.png",
+	},
+	{
+		name: "Khatchapuri Adjarulad",
+		price: "15.00",
+		image: "./public/new-year-supra.png",
+	},
+	{
+		name: "Mcvadi",
+		price: "16.00",
+		image: "./public/new-year-supra.png",
+	},
+	{
+		name: "Kabab",
+		price: "15.00",
+		image: "./public/new-year-supra.png",
+	},
+	{
+		name: "Tchkmeruli",
+		price: "13.00",
+		image: "./public/tchqmeruli.jpg",
 	},
 	{
 		name: "Ostri",
@@ -57,144 +63,123 @@ products_json = [
 		image: "./public/new-year-supra.png",
 	},
 	{
-		name: "Mkhliani",
-		price: "8.00",
-		image: "./public/new-year-supra.png",
-	},
-	{
-		name: "Lobio",
-		price: "10.00",
-		image: "./public/new-year-supra.png",
-	},
-	{
-		name: "Mcvadi",
-		price: "18.00",
-		image: "./public/new-year-supra.png",
-	},
-	{
-		name: "Soko",
-		price: "11.50",
-		image: "./public/new-year-supra.png",
-	},
-	{
-		name: "Pavé de saumon",
-		price: "16.00",
-		image: "./public/new-year-supra.png",
-	},
-	{
-		name: "Tolma",
-		price: "11.00",
-		image: "./public/new-year-supra.png",
-	},
-	{
-		name: "Tchkmeruli",
+		name: "Khinkali",
 		price: "12.00",
-		image: "./public/new-year-supra.png",
-	},
-	{
-		name: "Kebab",
-		price: "17.00",
-		image: "./public/new-year-supra.png",
-	},
-	{
-		name: "Gâteau au miel",
-		price: "4.50",
-		image: "./public/new-year-supra.png",
-	},
-	{
-		name: "Tartelette",
-		price: "4.50",
-		image: "./public/new-year-supra.png",
-	},
-	{
-		name: "Tiramisu Café",
-		price: "4.50",
-		image: "./public/new-year-supra.png",
-	},
-	{
-		name: "Roulé à la meringue",
-		price: "6.00",
-		image: "./public/new-year-supra.png",
-	},
-	{
-		name: "Le Gourmand",
-		price: "4.50",
-		image: "./public/new-year-supra.png",
-	},
-	{
-		name: "Tarte aux fruits",
-		price: "6.00",
-		image: "./public/new-year-supra.png",
-	},
-	{
-		name: "Glace Maison Vanille",
-		price: "2.50",
-		image: "./public/new-year-supra.png",
-	},
-	{
-		name: "Coca Cola Original / Zéro /Cherry",
-		price: "3.50",
-		image: "./public/new-year-supra.png",
-	},
-	{
-		name: "Perrier",
-		price: "3.50",
-		image: "./public/new-year-supra.png",
-	},
-	{
-		name: "Jus de fruit",
-		price: "4.00",
-		image: "./public/new-year-supra.png",
-	},
-	{
-		name: "Limonade maison",
-		price: "5.50",
-		image: "./public/new-year-supra.png",
-	},
-	{
-		name: "Eau plate",
-		price: "2.50",
-		image: "./public/new-year-supra.png",
-	},
-	{
-		name: "Bière blonde ou ombrée",
-		price: "2.50",
-		image: "./public/new-year-supra.png",
-	},
-	{
-		name: "Whisky Clan Campbell /Ballantine (50ml)",
-		price: "4.50",
-		image: "./public/new-year-supra.png",
-	},
-	{
-		name: "Expresso",
-		price: "1.80",
-		image: "./public/new-year-supra.png",
-	},
-	{
-		name: "Double expresso",
-		price: "2.40",
-		image: "./public/new-year-supra.png",
-	},
-	{
-		name: "Allongé",
-		price: "2.50",
-		image: "./public/new-year-supra.png",
-	},
-	{
-		name: "Latté",
-		price: "2.80",
-		image: "./public/new-year-supra.png",
-	},
-	{
-		name: "Thè vert / noir",
-		price: "2.50",
 		image: "./public/new-year-supra.png",
 	},
 ];
 
-products_json.forEach((product) => {
-	products_html.innerHTML += `
+deserts_json = [
+	{
+		name: "Roulé a la fraise",
+		price: "5.00",
+		image: "./public/new-year-supra.png",
+	},
+	{
+		name: "Tartelette aux fruits",
+		price: "5.00",
+		image: "./public/new-year-supra.png",
+	},
+	{
+		name: "Roulé à la meringue",
+		price: "5.00",
+		image: "./public/new-year-supra.png",
+	},
+];
+
+boissons_json = [
+	{
+		name: "Perrier",
+		price: "3.50",
+		image: "./public/perrier.png",
+	},
+	{
+		name: "Orangina",
+		price: "3.50",
+		image: "./public/orangina.jpg",
+	},
+	{
+		name: "Jus Multifruits",
+		price: "3.50",
+		image: "./public/new-year-supra.png",
+	},
+	{
+		name: "Schweppes (Argumes)",
+		price: "3.50",
+		image: "./public/schweppes.png",
+	},
+	{
+		name: "Coca-Cola",
+		price: "3.50",
+		image: "./public/coca_cola.png",
+	},
+	{
+		name: "Jus de fruit",
+		price: "3.50",
+		image: "./public/new-year-supra.png",
+	},
+	{
+		name: "Pago ace-orange-carotte-citron",
+		price: "3.50",
+		image: "./public/pago.png",
+	},
+];
+entree_json.forEach((product) => {
+	entree_html.innerHTML += `
+          <div class="col">
+            <div class="card bg-secondary-subtle text-center" style="width: 18rem">
+              <img
+                src=${product.image}
+                class="card-img-top"
+                alt="${product.name}"
+              />
+              <div class="card-body">
+                <h4 class="card-title">${product.name}</h4>
+				<h5>${product.price} €</h5>
+              </div>
+            </div>
+          </div>
+`;
+});
+
+plats_json.forEach((product) => {
+	plats_html.innerHTML += `
+          <div class="col">
+            <div class="card bg-secondary-subtle text-center" style="width: 18rem">
+              <img
+                src=${product.image}
+                class="card-img-top"
+                alt="${product.name}"
+              />
+              <div class="card-body">
+                <h4 class="card-title">${product.name}</h4>
+				<h5>${product.price} €</h5>
+              </div>
+            </div>
+          </div>
+`;
+});
+
+deserts_json.forEach((product) => {
+	deserts_html.innerHTML += `
+          <div class="col">
+            <div class="card bg-secondary-subtle text-center" style="width: 18rem">
+              <img
+                src=${product.image}
+                class="card-img-top"
+                alt="${product.name}"
+              />
+              <div class="card-body">
+                <h4 class="card-title">${product.name}</h4>
+				<h5>${product.price} €</h5>
+              </div>
+            </div>
+          </div>
+`;
+});
+
+boissons_json.forEach((product) => {
+	boissons_html.innerHTML += `
           <div class="col">
             <div class="card bg-secondary-subtle text-center" style="width: 18rem">
               <img
