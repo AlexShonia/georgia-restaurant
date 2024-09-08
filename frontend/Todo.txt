@@ -3,6 +3,7 @@
     https://rtveli-restaurant.ge/
     https://craftwinerestaurant.com/
     https://georgia.travel/ka/საახალწლო-სუფრა
+    https://chez-magda.com/menu-plats-restaurant-georgien-chez-magda/
 
 unsplash.com for free food photos
 
@@ -33,3 +34,4 @@ menu page
     + update menu items
     add correct photos
     
+buy domain

@@ -30,27 +30,27 @@ plats_json = [
 	{
 		name: "Tolma",
 		price: "13.00",
-		image: "./public/new-year-supra.png",
+		image: "./public/tolma.jpg",
 	},
 	{
 		name: "Khatchapuri",
 		price: "15.00",
-		image: "./public/new-year-supra.png",
+		image: "./public/khatchapuri.jpg",
 	},
 	{
 		name: "Khatchapuri Adjarulad",
 		price: "15.00",
-		image: "./public/new-year-supra.png",
+		image: "./public/khatchapuri_adjarulad.jpg",
 	},
 	{
 		name: "Mcvadi",
 		price: "16.00",
-		image: "./public/new-year-supra.png",
+		image: "./public/mcvadi.jpg",
 	},
 	{
 		name: "Kabab",
 		price: "15.00",
-		image: "./public/new-year-supra.png",
+		image: "./public/kabab.jpg",
 	},
 	{
 		name: "Tchkmeruli",
@@ -60,12 +60,12 @@ plats_json = [
 	{
 		name: "Ostri",
 		price: "16.00",
-		image: "./public/new-year-supra.png",
+		image: "./public/ostri.jpg",
 	},
 	{
 		name: "Khinkali",
 		price: "12.00",
-		image: "./public/new-year-supra.png",
+		image: "./public/khinkali.jpg",
 	},
 ];
 
@@ -78,12 +78,12 @@ deserts_json = [
 	{
 		name: "Tartelette aux fruits",
 		price: "5.00",
-		image: "./public/new-year-supra.png",
+		image: "./public/tartalette.jpg",
 	},
 	{
 		name: "Roulé à la meringue",
-		price: "5.00",
-		image: "./public/new-year-supra.png",
+		price: "6.00",
+		image: "./public/roule_meringue.jpg",
 	},
 ];
 
